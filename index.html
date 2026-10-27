@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Solanki — Web Developer</title>
+  <meta name="description" content="Portfolio of Himanshu Solanki, MCA student at LDRP ITR Gandhinagar and web developer working with React.js, Node.js and ASP.NET.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">H<span>.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Experience</a>
+      <a href="#contact" class="nav__cta">Say hello</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero__kicker reveal">Himanshu Solanki · MCA student · Gandhinagar</p>
+      <h1 class="hero__title">
+        <span class="line"><span>I build small,</span></span>
+        <span class="line"><span><em>careful</em> things</span></span>
+        <span class="line"><span>for the web.</span></span>
+      </h1>
+      <div class="hero__foot reveal">
+        <p>
+          Hi, I'm Himanshu Solanki. I'm doing my MCA at LDRP Institute of Technology and Research,
+          and I build web apps with React.js, Node.js and ASP.NET.
+        </p>
+        <a href="#work" class="arrow-link">See my work <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero__status reveal">
+        <span class="dot"></span> Open to internships &amp; freelance work
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <h2 class="section__label reveal">01 — About</h2>
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="lead reveal">
+            I'm a Master of Computer Applications student at LDRP Institute of Technology and
+            Research, Gandhinagar, currently in my first semester.
+          </p>
+          <p class="reveal">
+            Before that I finished my BCA at Dr. V. R. Godhaniya IT College with 79.09%. My final-year
+            project was GameHub, a web-based gaming platform built with ASP.NET and SQL Server.
+          </p>
+          <p class="reveal">
+            I've done two internships. At TechRover Solutions I worked on a ticket booking system with
+            React.js and Node.js, on both the frontend components and the backend APIs. At CodeAlpha I'm
+            building frontend projects in plain HTML, CSS and JavaScript, including the ones below.
+          </p>
+        </div>
+        <ul class="facts reveal">
+          <li><span class="facts__num" data-count="2">0</span><span>internships<br>completed</span></li>
+          <li><span class="facts__num" data-count="6">0</span><span>projects<br>built so far</span></li>
+          <li><span class="facts__num" data-count="79.09" data-decimals="2" data-suffix="%">0</span><span>in my<br>BCA</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+      <h2 class="section__label reveal">02 — Selected work</h2>
+
+      <ol class="projects">
+        <li class="project reveal">
+          <a class="project__link" href="../CodeAlpha_ImageGallery/index.html" target="_blank" rel="noopener">
+            <div class="project__media"><img src="assets/shot-gallery.jpg" alt="Screenshot of the Darkroom image gallery" loading="lazy"></div>
+            <div class="project__info">
+              <span class="project__num">01</span>
+              <h3>Darkroom</h3>
+              <p>An image gallery with category filters, a lightbox that zooms out of the clicked photo, swipe on mobile and a slideshow mode.</p>
+              <ul class="tags"><li>HTML</li><li>CSS Grid</li><li>Web Animations API</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <a class="project__link" href="../CodeAlpha_Calculator/index.html" target="_blank" rel="noopener">
+            <div class="project__media"><img src="assets/shot-calculator.jpg" alt="Screenshot of the ET-Calc calculator" loading="lazy"></div>
+            <div class="project__info">
+              <span class="project__num">02</span>
+              <h3>ET-Calc</h3>
+              <p>A calculator styled after 70s desk calculators. It has its own expression parser (no eval), a live result preview, full keyboard support and a printed history tape.</p>
+              <ul class="tags"><li>JavaScript</li><li>Parsing</li><li>localStorage</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <a class="project__link" href="../CodeAlpha_MusicPlayer/index.html" target="_blank" rel="noopener">
+            <div class="project__media"><img src="assets/shot-player.jpg" alt="Screenshot of the Side A cassette music player" loading="lazy"></div>
+            <div class="project__info">
+              <span class="project__num">03</span>
+              <h3>Side A</h3>
+              <p>A cassette-deck music player. The tape reels wind from one spool to the other as the song plays. It also has a playlist, shuffle, repeat and autoplay.</p>
+              <ul class="tags"><li>HTML5 Audio</li><li>SVG</li><li>JavaScript</li></ul>
+            </div>
+          </a>
+        </li>
+
+        <li class="project reveal">
+          <a class="project__link" href="#top">
+            <div class="project__media project__media--self">
+              <span>You're<br>looking at it.</span>
+            </div>
+            <div class="project__info">
+              <span class="project__num">04</span>
+              <h3>This portfolio</h3>
+              <p>Plain HTML, CSS and a bit of JavaScript. It uses scroll-triggered reveals, a reading progress bar, and nav links that follow the section you're reading.</p>
+              <ul class="tags"><li>IntersectionObserver</li><li>Responsive</li></ul>
+            </div>
+          </a>
+        </li>
+      </ol>
+
+      <h3 class="other__title reveal">Earlier projects</h3>
+      <div class="other">
+        <article class="other__card reveal">
+          <span class="other__when">2025 – 2026 · Internship</span>
+          <h4>Ticket Booking System</h4>
+          <p>Admin and user panels for booking tickets, built at TechRover Solutions. I worked on frontend components, backend APIs, booking and user management.</p>
+          <ul class="tags"><li>React.js</li><li>Node.js</li><li>REST APIs</li></ul>
+        </article>
+        <article class="other__card reveal">
+          <span class="other__when">2025 · BCA project</span>
+          <h4>GameHub</h4>
+          <p>A web-based gaming platform with user login, a game dashboard, score tracking and a leaderboard, backed by a normalized SQL Server database.</p>
+          <ul class="tags"><li>ASP.NET</li><li>C#</li><li>SQL Server</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <h2 class="section__label reveal">03 — Skills</h2>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>React.js</span><span>JavaScript</span><span>Node.js</span><span>ASP.NET</span><span>HTML &amp; CSS</span><span>SQL Server</span><span>Bootstrap</span>
+          <span>React.js</span><span>JavaScript</span><span>Node.js</span><span>ASP.NET</span><span>HTML &amp; CSS</span><span>SQL Server</span><span>Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-group reveal">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js</li>
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Responsive layouts</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Backend &amp; data</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>ASP.NET (C#)</li>
+            <li>SQL Server, MySQL (basic)</li>
+            <li>REST APIs, MVC, CRUD</li>
+            <li>OOP, validation, sessions</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Tools</h3>
+          <ul>
+            <li>Visual Studio &amp; VS Code</li>
+            <li>SQL Server Management Studio</li>
+            <li>Git &amp; GitHub</li>
+            <li>Browser DevTools</li>
+            <li>Canva</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section journey" id="journey">
+      <h2 class="section__label reveal">04 — Experience &amp; education</h2>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="timeline__when">2026 – now</span>
+          <div>
+            <h3>MCA — LDRP Institute of Technology and Research, Gandhinagar</h3>
+            <p>Master of Computer Applications, currently in Semester 1.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__when">2026</span>
+          <div>
+            <h3>Frontend Development Intern — CodeAlpha</h3>
+            <p>Built an image gallery, a calculator, a music player and this portfolio with plain HTML, CSS and JavaScript.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__when">2025 – 26</span>
+          <div>
+            <h3>Web Development Intern — TechRover Solutions Pvt Ltd</h3>
+            <p>Worked on a ticket booking system (admin &amp; user) with React.js and Node.js: frontend components, backend APIs, booking and user management.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__when">2023 – 26</span>
+          <div>
+            <h3>BCA — Dr. V. R. Godhaniya IT College</h3>
+            <p>Bachelor of Computer Applications, 79.09%. Final-year project: GameHub (ASP.NET, SQL Server).</p>
+          </div>
+        </li>
+      </ol>
+
+      <a class="resume-btn reveal" href="assets/Himanshu_Solanki_Resume.pdf" download>
+        Download résumé <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2 class="section__label reveal">05 — Contact</h2>
+      <p class="contact__big reveal">Have a project, a question,<br>or an internship? <em>Let's talk.</em></p>
+
+      <div class="contact__grid">
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="name" name="name" placeholder=" " required>
+            <label for="name">Your name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email</label>
+          </div>
+          <div class="field">
+            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <!-- spam trap: real people never see or fill this -->
+          <input type="text" name="_honey" class="form__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="form__send">
+            <span>Send message</span>
+          </button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </form>
+
+        <ul class="contact__links reveal">
+          <li><span>Email</span><a href="mailto:himanshusolanki30744@gmail.com" id="mailLink">himanshusolanki30744@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:+919974876303">+91 99748 76303</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/himanshu-solanki-b850162b0/" target="_blank" rel="noopener">linkedin.com/in/himanshu-solanki-b850162b0</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Himanshu Solanki</span>
+    <a href="#top" class="arrow-link">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
